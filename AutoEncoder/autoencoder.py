@@ -227,7 +227,7 @@ class Decoder(nn.Module):
 		#print x.size()
 		x = self.dconv1(x)
 		#print x.size()
-		x = F.sigmoid(x)
+		x = torch.sigmoid(x)
 		#print x
 		return x
 
